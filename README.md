@@ -1,12 +1,31 @@
-WP Project Bootstrap
-====================
+# WP Project Bootstrap
 
 WP Project Bootstap for WordPress and [Varying-Vagrant-Vagrants] is the starting point for every new [WordPress] project at [Red Bridge Internet].
 
-This can be run in a development environment provisioned by [Varying-Vagrant-Vagrants]. It contains [Auto Site Setup] scripts to import an active project or spin up a fresh new WordPress installation.
+## Software Requirements
 
-Getting Started
------------
+The whole setup relies on a few things:
+
+* Node+NPM
+* Homebrew
+* Gulp
+* Grunt
+* Compass
+* Bower
+
+## Getting Started
+
+Install [Varying Vagrant Vagrants](https://github.com/Varying-Vagrant-Vagrants/VVV). This is a MAMP replacement. The steps to install are under **"The First Vagrant Up"** on the Github README. Along with installing VirtualBox and Vagrant, you'll want to install the "vagrant-hostsupdater" and "vagrant-triggers" plugins.
+
+Install @topdown's [VVV Dashboard](https://github.com/topdown/VVV-Dashboard). Just follow the 2 steps under "Instructions". It's a nicer dashboard to work with for Varying Vagrant Vagrants.
+
+Install [Variable VVV][https://github.com/bradp/vv], a site creation tool which automates setting up new sites, setting up deployments, and more.. This is a command line site creation tool that makes setting up new sites in VVV much simpler. If you install [Homebrew](http://brew.sh/), it makes the install of this a 1 liner.
+
+These will give you the tools to create a WordPress development environment and custom development WordPress installs.
+
+I'll send you a command later today to create a new development site for the Religious Studies project. Then we can finish up setting up the dev site on our call.
+
+## Getting Started
 
 ### Install Dependencies
 
@@ -31,11 +50,7 @@ Edit the file `vvv-nginx.conf` and add the following before the last closing tag
 		try_files $uri $uri/ /wordpress/index.php?$args;
 	}
 
-### Updating this Project
-
-**Updates for WP Project Bootstrap** -- The way it stands now, these clones are a one time thing. This project will continue to be improved and updated, but once you clone it, it's basically yours. It's a throwaway at the moment. More thinking on allowing for updating needs to be done.
-
-## Some Notes on Special Files
+## Special Files
 
 All files at the webroot are typical for the WordPress installations with these exceptions:
 
@@ -45,34 +60,28 @@ All files at the webroot are typical for the WordPress installations with these 
 You may want to place your own versions of these files in the public directory:
 
 	/favicon.ico
-	
 
-## The Theme and Plugins
+## Theme and Plugins
 
 WP Project Bootstrap comes with the default WordPress Twenty series theme. Red Bridge Internet uses it's own starter theme called [feather] that is hosted on GitHub.
 
-## Resources and Documentation
+## Notes
 
-PHP Error Logs
+VVV Log Locations
 
-	/tmp/php_errors.log
+```
+/tmp/php_errors.log
+```
 
-Websites
+## References
 
-* [WordPress]: http://www.wordpress.org
-* [Varying-Vagrant-Vagrants]: https://github.com/varying-vagrant-vagrants/vvv/wiki/Auto-site-Setup
-* [feather]: https://github.com/ereckers/feather
-* [Bootstrap 3]: http://getbootstrap.com
-* [humans.txt]: http://humanstxt.org
-* [Red Bridge Internet]: http://www.redbridgenet.com
-
-[WordPress]: http://www.wordpress.org
-[Varying-Vagrant-Vagrants]: https://github.com/Varying-Vagrant-Vagrants/VVV
-[feather]: https://github.com/ereckers/feather
-[Auto Site Setup]: https://github.com/varying-vagrant-vagrants/vvv/wiki/Auto-site-Setup
-[WordPress]: http://www.wordpress.org
-[Red Bridge Internet]: http://www.redbridgenet.com
-[Bootstrap 3]: http://getbootstrap.com/
-[Plugins]: https://github.com/ereckers/wp-project-bootstrap/public/wp-content/plugins
-[humans.txt]: http://humanstxt.org
+* [WordPress](http://www.wordpress.org)
+* [Varying-Vagrant-Vagrants](https://github.com/Varying-Vagrant-Vagrants/VVV)
+* [feather](https://github.com/ereckers/feather)
+* [Auto Site Setup](https://github.com/varying-vagrant-vagrants/vvv/wiki/Auto-site-Setup)
+* [WordPress](http://www.wordpress.org)
+* [Red Bridge Internet](http://www.redbridgenet.com)
+* [Bootstrap](http://getbootstrap.com/)
+* [Plugins](https://github.com/ereckers/wp-project-bootstrap/public/wp-content/plugins)
+* [humans.txt](http://humanstxt.org)
 
