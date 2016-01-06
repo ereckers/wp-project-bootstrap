@@ -1,0 +1,8 @@
+Developer:				Ed Reckers
+Development Company:	Red Bridge Internet
+Twitter:				@ereckers @redbridgenet
+From:					San Francisco, California, United States
+
+Last Update:			Daily
+Language:				English
+Toolbox:				WordPress, Bootstrap 3, LAMP, VIM, Stella
